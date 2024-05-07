@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #333; 
+  color: white; 
+  padding: 20px; 
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none; 
+  margin: 0 10px; 
+}
+figure {
+  display: flex;
+  height: 100%;
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+}
+figcaption {
+  color: white;
+  box-shadow: 100px;
+  scale: 1000%;
+  position: absolute;
+  top: 380px;
+  left: 920px;
+}
+.galeria{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px;
+  justify-content: center;
+  gap: 10px;
+}
+.galeria img{
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+}
+.livro img{
+  margin: 20px;
+  display: flex;
+  height: 220px;
+  width: fit-content;
+}
+
+.livro{
+  display: flex;
+  align-items: center;
+}
+.meu-livro{
+  display: flex;
+  flex-direction: column;
+}
+
+.meu-livro h1{
+  display: flex;
+  position: absolute;
+  left: 180px;
+  top: 745px;
+  color: #333;
+  text-shadow: #333;
+}
+.info-livro a{
+  display: flex;
+  flex-direction: column;
+}
+.info-livro p{
+  font-size: 27px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0; 
+}
+
+@media screen and (max-width:400px){
+  *{
+      text-align: center;
+      justify-content: center;
+  }
+  .livro{
+      display: block;
+  }
+  .galeria{
+      justify-content: center;
+      display: block;
+  }
+}
